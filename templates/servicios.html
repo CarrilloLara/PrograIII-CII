@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Servicios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo.css"> <!-- Ruta ajustada del archivo CSS -->
+</head>
+<body>
+    <!-- Encabezado / Barra de navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo"> <!-- Imagen del logo -->
+        </div>
+        <div class="nav-title">
+            <span>SERVICIOS</span> <!-- Título en la barra -->
+        </div>
+    </header>
+
+    <!-- Fondo -->
+    <div class="background"></div>
+
+    <!-- Contenedor principal con dos columnas -->
+    <div class="main-container">
+        <!-- Cuadro de información del servicio -->
+        <div class="info-box" id="infoBox">
+            <div class="info-content">
+                <div class="image" id="serviceImage">
+                    <p>Imagen</p>
+                </div>
+                <div class="info-details">
+                    <h2 id="serviceTitle">Nombre del servicio</h2>
+                    <p><strong>Precio:</strong> <span id="servicePrice">0$</span></p>
+                    <p><strong>Detalles:</strong></p>
+                    <p id="serviceDescription">Descripción del servicio seleccionado aparecerá aquí.</p>
+                    <button class="btn">Agendar cita</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de botones de servicios -->
+        <div class="container">
+            <button class="button" onclick="showInfo('Cortes de Cabello', '15$', 'Cortes de cabello profesionales...')">Cortes de Cabello</button>
+            <button class="button" onclick="showInfo('Color', '50$', 'Coloración de cabello con productos de calidad...')">Color</button>
+            <button class="button" onclick="showInfo('Decoloraciones', '70$', 'Decoloraciones profesionales...')">Decoloraciones</button>
+            <button class="button" onclick="showInfo('Pedicure', '30$', 'Pedicure para el cuidado de los pies...')">Pedicure</button>
+            <button class="button" onclick="showInfo('Manicure', '20$', 'Manicure para uñas perfectas...')">Manicure</button>
+            <button class="button" onclick="showInfo('Esmaltados permanentes', '35$', 'Esmaltado permanente de alta calidad...')">Esmaltados permanentes</button>
+            <button class="button" onclick="showInfo('Uñas Acrílicas y Gel', '40$', 'Uñas acrílicas y de gel duraderas...')">Uñas Acrílicas y Gel</button>
+            <button class="button" onclick="showInfo('Facial', '60$', 'Tratamientos faciales para piel saludable...')">Facial</button>
+            <button class="button" onclick="showInfo('Planchados', '25$', 'Planchado de cabello con estilo...')">Planchados</button>
+            <button class="button" onclick="showInfo('Alisados', '80$', 'Alisado permanente...')">Alisados</button>
+            <button class="button" onclick="showInfo('Pistoleados', '45$', 'Tratamiento con pistoleados...')">Pistoleados</button>
+            <button class="button" onclick="showInfo('Maquillaje', '70$', 'Maquillaje profesional para eventos...')">Maquillaje</button>
+            <button class="button" onclick="showInfo('Perforaciones para niñas', '30$', 'Perforaciones seguras para niñas...')">Perforaciones para niñas</button>
+            <button class="button" onclick="showInfo('Depilaciones', '50$', 'Depilaciones de calidad con cera...')">Depilaciones</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo de JavaScript -->
+</body>
+</html>
