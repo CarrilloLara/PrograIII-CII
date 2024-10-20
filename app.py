@@ -22,7 +22,6 @@ class Usuario(db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False)
     contrasena = db.Column(db.String(255), nullable=False)
 
-
 # Cargar página de inicio
 @app.route('/')
 def index():
@@ -83,3 +82,4 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()  # Crear las tablas en la base de datos si aún no existen
         app.run(debug=True, port=5000)
+
